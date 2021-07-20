@@ -1,0 +1,47 @@
+/* sub1-2.css */
+#map {
+    width: 1200px;
+    height: 830px;
+    margin: 0 auto;
+    text-align: center;
+}
+#map .txt_box p {
+    display: inline-block;
+    margin: 80px 70px;
+    font-size: 19px;
+    font-weight: 300;
+    position: relative;
+}
+#map .txt_box p:nth-child(2n+1) {
+    margin-right: -50px;
+}
+#map .txt_box p:first-child:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -35px;
+    top: 3px;
+    display: block;
+    background-image: url(images/block_piece3.png);
+}
+#map .txt_box p:nth-child(3):before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -35px;
+    top: 3px;
+    display: block;
+    background-image: url(images/block_piece2.png);
+}
+#map .txt_box p:nth-child(5):before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -35px;
+    top: 3px;
+    display: block;
+    background-image: url(images/block_piece1.png);
+}

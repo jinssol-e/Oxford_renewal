@@ -1,0 +1,94 @@
+/* sub2-1.css */
+#sub_title {
+    background-image: url(images/sub2_1_title.jpg);
+}
+#sub_title:before {
+    content: '';
+    display: none;
+}
+.lnb ul {
+    width: calc(250px*3);
+}
+#prod_age {
+    width: 1200px;
+    height: 780px;
+    margin: 0 auto;
+    position: relative;
+}
+#prod_age .tab_title {
+    text-align: center;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+#prod_age .tab_title h4 {
+    float: left;
+    display: block;
+    width: 199px;
+    line-height: 50px;
+    border: 1px solid #f7d449;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 400;
+}
+#prod_age .tab_title h4.active {
+    background-color: #f7d449;
+}
+.tab_box .content {
+    width: 1200px;
+    height: 620px;
+    overflow: hidden;
+    display: none;
+}
+.tab_box .content.active {
+    display: block;
+}
+.tab_box .content > div {
+    width: 260px;
+    height: 210px;
+    float: left;
+    border: 1px solid #ddd;
+    margin-left: 30px;
+    margin-top: 70px;
+    position: relative;
+}
+.tab_box .content > div img {
+    width: 100%;
+}
+.tab_box .prod_name {
+   margin-top: 5px;
+   margin-left: 10px;
+   font-size: 15px;
+   font-weight: 300;
+}
+.tab_box .prod_name > p:first-child {
+    font-weight: 500;
+}
+.tab_box .content .btn {
+    opacity: 0;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    border: 1px solid #f7d449;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+.tab_box .content .btn:hover {
+    background-color: #f7d449;
+}
+.tab_box .content > div:hover:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.tab_box .content > div:hover .btn {
+    opacity: 1;
+}
